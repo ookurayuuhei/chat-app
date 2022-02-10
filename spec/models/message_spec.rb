@@ -4,7 +4,6 @@ RSpec.describe Message, type: :model do
   before do
     @message = FactoryBot.build(:message)
   end
-
   describe 'メッセージ投稿' do
     context 'メッセージが投稿できる場合' do
       it 'contentとimageが存在していれば保存できる' do
